@@ -10,6 +10,9 @@ public class Test {
         MyThread myThread2 = new MyThread("myThread-2");
         myThread2.start();
 
+        Thread thread = new Thread(new Runner());
+        thread.start();
+
         System.out.println("I am going to sleep");
         Thread.sleep(3000);
         System.out.println("I am awake!");
